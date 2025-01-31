@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Francode</title>
+  <style>
+    /* Reset de estilos */
+    body, h1, h2, p, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: black;
+      color: #33FF00;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000;
+      color: #33FF00;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #33FF00;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      margin: 20px 0;
+      background: #222;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-size: 1.2rem;
+    }
+
+    input, textarea {
+      background: #333;
+      border: 1px solid #33FF00;
+      padding: 10px;
+      color: #33FF00;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #33FF00;
+      color: #000;
+      padding: 10px;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background: #00FF7F;
+    }
+
+    footer {
+      background-color: #000;
+      color: #33FF00;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><a href="#" style="color: #33FF00; text-decoration: none;">Francode</a></h1>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/acerca-de">Acerca de</a>
+      <a href="/contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección de "Contacto" -->
+  <section>
+    <div class="container">
+      <h2>Contacto</h2>
+      <form action="mailto:franco@example.com" method="POST" enctype="text/plain">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
+
